@@ -59,12 +59,11 @@ if len(content) < 23:
         yest = open(yesterday, "w")
         for i in range(0, 24):
             yest.write("0\n")
-    
+        yest.close()
     with open(yesterday) as y:
         yes = y.readlines()
     yes = [x.strip() for x in yes]
     yes = [float(x) for x in yes]
-    
 
     for i in range(len(content), len(yes)):
         final.append(yes[i])
