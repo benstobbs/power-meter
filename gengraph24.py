@@ -71,6 +71,7 @@ for f in final:
 f = open("/var/www/html/lastday", "w")
 f.write(str(sig))
 
+py.sign_in('USERNAME', 'APIKEY')
 nos = []
 #print(lasth)
 for i in range(lasth, lasth-24, -1):
