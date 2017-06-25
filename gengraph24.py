@@ -53,6 +53,13 @@ final = []
 if len(content) < 23:
     yesterday = "/var/www/html/data/" + datetime.strftime(datetime.now() - timedelta(1), '%Y%m%d')
     
+    try:
+        open(yesterday, "r")
+    except:
+        yest = open(yesterday, "w")
+        for i in range(0, 24):
+            yest.write("0\n")
+    
     with open(yesterday) as y:
         yes = y.readlines()
     yes = [x.strip() for x in yes]
