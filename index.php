@@ -40,7 +40,7 @@ $ldcost = substr((strval(floatval($lastday)*0.12157*1.2)), 0, 5);
             <h1>Last 24h:</h1>
         </div>
         <p>
-            <img class="img-responsive" src="https://plot.ly/~benstobbs/2.png" />
+            <img class="img-responsive" src="https://plot.ly/~benstobbs/0.png" />
         </p>
         <p><?php echo($ldstring); ?>kWh = £<?php echo($ldcost); ?> was used in the last 24 hours.</p>
         
